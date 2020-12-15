@@ -1,0 +1,205 @@
+
+h5 {
+    color: black;
+    font-size: 14px;
+}
+
+
+h6 {
+    color: darkslategrey;
+    font-size: 16px;
+}
+
+
+#btnInfo {
+    display: none;
+}
+
+.label + #fab {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 24px;
+    left: 20px;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.AnimalName {
+    font-family: roboto;
+    font-size:34px;
+    font-weight:400;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0px;
+    line-height: 28px;
+}
+.AnimalDesc {
+    font-family: roboto;
+    font-size:14px;
+    font-weight:200;
+    color: grey;
+    margin-top: 0;
+    padding-top: -16px;
+}
+.iphone5 {
+    width: 320px;
+    height:  600px;
+}
+.animal_img_container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bottom-right-overhang {
+    position: relative;
+    top: -18px;
+    float:right;
+    left: -20px;
+}
+
+.below {
+    position: absolute;
+    left: 16px;
+    bottom: -80px;
+}
+.w3-bar-item{
+    font-family: roboto;
+}
+
+.w3-btn, .w3-button {
+    padding: 8px 13px;
+}
+
+.white_contentSci {
+    display: none;
+    position: fixed;
+    top: calc(0.2*600px);
+    left: calc(0.1*320px);
+    width: calc(0.8*320px);
+    height: auto;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+.white_contentDesc {
+    display: none;
+    position: fixed;
+    top: calc(0.15*600px);
+    left: calc(0.1 * 320px);
+    width: calc(0.8 * 320px);
+    height: calc(0.5*600px);
+    padding: 16px;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.toggle:checked ~ #blackoverlaySci {
+    display: block;
+}
+
+.toggle:checked ~ #lightSci {
+    display: none;
+}
+
+.toggle:not(:checked) ~ #blackoverlaySci {
+    display: none;
+}
+
+.toggle:checked ~ #lightSci {
+    display: block;
+}
+
+.toggleDesc:checked ~ #blackoverlayDesc {
+    display: block;
+}
+
+.toggleDesc:checked ~ #lightDesc {
+    display: none;
+}
+
+.toggleDesc:not(:checked) ~ #blackoverlayDesc {
+    display: none;
+}
+.toggleDesc:checked ~ #lightDesc {
+    display: block;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content #SciFactsText {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content #SciFactsText:hover {background-color: #f1f1f1}
+
+input[type=checkbox]:checked + #fab ~ .dropdown-content {
+    display: block;
+}
+
+input[type=checkbox]:checked + #fab ~ #btnInfo {
+    display: block;
+}
+
+#blackoverlaySci {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+#blackoverlayDesc {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+#DescLightbox {
+    display: none;
+}
+
+#SciFacts {
+    display: none;
+}
